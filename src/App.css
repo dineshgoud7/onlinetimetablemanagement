@@ -1,4 +1,4 @@
-.App {
+App {
   text-align: center;
 }
 
@@ -9,30 +9,426 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 2s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #e3e3e3;
+  min-height: 20vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: rgb(44, 40, 40); */
+   /* Replace 'path_to_your_image.jpg' with the path to your image */
+   background-image: url('');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.App-body {
+  background-color: #abc0c9;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-image: url('');
+  /* Adding background image */
+   /* Replace 'path_to_your_image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.App-login {
+  background-color: #202020;
+  min-height: 250px;
+  min-width: 300px;
+  padding: 20px;
+  margin-top: 40px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+
+/* App.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make the login container full height of the viewport */
+  /*background: url('./images/petbackground.jpg') center center/cover; /* Assuming 'petbackground.jpg' is your background image */
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.5); /* Apply glass blur effect */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-form input {
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #3d3b3b;
+  width: 100%;
+}
+
+.btn {
+  /* Common button styles */
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success {
+  /* Styles for the success button */
+  background-color: #28a745; /* Green background color */
+  color: #fff; /* White text color */
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker green color on hover */
+}
+
+/* Existing CSS code */
+
+/* Styling for button links */
+.btn-link {
+  /* Common button link styles */
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #ced4da; /* Border color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  color: #212529; /* Button text color */
+}
+
+.btn-link:hover {
+  background-color: #f8f9fa; /* Lighter background color on hover */
+}
+
+.btn-link:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #86b7fe; /* Border color on focus */
+}
+
+.btn-link:active {
+  background-color: #e2e6ea; /* Lighter background color on active */
+}
+
+.btn-link.disabled,
+.btn-link:disabled {
+  opacity: 0.65; /* Reduce opacity for disabled state */
+  pointer-events: none; /* Disable pointer events for disabled state */
+}
+/*registration*/
+
+
+
+/* ShowCourses.css */
+
+/* App.css */
+
+/* App.css */
+
+.course-list {
+  list-style: none;
+  padding: 0;
+}
+
+.course-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-name {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex-grow: 1; /* Allow the course name to grow to fill available space */
+}
+
+.enroll-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 20px; /* Add some space between course name and button */
+}
+
+.enroll-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.enrolled {
+  background-color: #28a745;
+}
+
+.enrolled:hover {
+  background-color: #218838;
+}
+/* show courses add course*/
+/* App.css */
+/* Existing styles */
+/* Add the following styles for the new elements */
+
+/* Style for add course section */
+.add-course {
+  margin-top: 20px;
+}
+
+.add-course input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.add-course button {
+  padding: 5px 10px;
+  background-color: #000000;
+  color: white;
+  border: green;
+  cursor: pointer;
+}
+
+.add-course button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for delete button */
+.delete-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #bd2130;
+}
+
+/* Style for course list items */
+.course-item {
+  margin-bottom: 10px;
+}
+
+.course-name {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/*time table*/
+/* Timetable.css */
+.timetable {
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+/*Home page*/
+
+.home {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f0f8ff57; /* Light blue background color */
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.home h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.home p {
+  font-size: 18px;
+  color: #030303;
+  margin-bottom: 30px;
+}
+
+.features, .get-started {
+  margin-top: 50px;
+}
+
+.features h2, .get-started h2 {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.get-started p {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.get-started button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.get-started button:hover {
+  background-color: #0056b3;
+}
+
+.get-started button:focus {
+  outline: none;
+}
+/*Contact page*/
+
+.contact-container {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-form, .feedback-form {
+  margin-top: 50px;
+}
+
+.contact-form form, .feedback-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+button[type="submit"]:focus {
+  outline: none;
+}
+/*navigation styles*/
+/* Add this to styles.css */
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.nav-links.show {
+  opacity: 1;
 }
