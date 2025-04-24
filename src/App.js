@@ -9,7 +9,7 @@ import Navigation from './Components/Navigation';
 // import TextBoxComponent from './component/TextBoxComponent';
 // import Car from './component/Carinfo';
 // import Sum from './component/Sum';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom'; 
 import { Container, AppBar, Toolbar } from '@material-ui/core';
 import Demoaxios from './Components/Demoaxios';
 import ShowCourses from './Components/ShowCourses';
